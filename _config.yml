@@ -10,14 +10,13 @@
 # -----------------------------------------------------------------------------
 
 title: blank
-first_name: Yohan
+first_name: Hanbeen
 last_name: Lee
 contact_note: >
   Feel free to reach out via email.
 description: >
-  Personal academic website of Yohan Lee. Research interests in preventing AI monopolization
-  and developing preemptive defense against the malicious exploitation of AI.
-keywords: ai-safety, ai-monopolization, preemptive-defense, generative-models, flow-matching, academic-website
+  Personal academic website of Hanbeen Lee. Research interests in Layout Optimization and Multi-physics Optimization.
+keywords: Optimum Design, Layout Optimization, Multi-physics Optimization
 lang: en
 icon: favicon.svg # in assets/img/
 
