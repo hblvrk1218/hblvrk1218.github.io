@@ -1,9 +1,6 @@
 # Yohan Lee · 연구 홈페이지
 
-[al-folio](https://github.com/alshedivat/al-folio) 기반 [Jekyll](https://jekyllrb.com/) 개인 연구 홈페이지입니다.
-블로그 글은 [Distill](https://distill.pub/) 형식을 쓰고, 나머지 페이지는 절제된 타이포 중심 디자인 하나로 통일했습니다.
-
-**사이트:** <https://yh-lee01.github.io> · [English README](README.md)
+**Live site:** <https://hblvrk1218.github.io> · [English README](README.md)
 
 | 홈 (라이트) | Distill 글 (다크) |
 | --- | --- |
