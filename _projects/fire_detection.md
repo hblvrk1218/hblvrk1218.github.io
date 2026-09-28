@@ -2,8 +2,7 @@
 layout: page
 title: Fire Classification & Detection
 description: Two-stage vision-based fire detection using EfficientNet-B0 and YOLOv8
-img: assets/img/fire_detection.png
-importance: 3
+date: 2024-07-01
 category: selected
 chip: Smart Factory · 2024
 tech: [python, efficientnet, yolov8, csharp]
