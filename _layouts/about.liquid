@@ -33,7 +33,7 @@ layout: default
     {% if page.announcements and page.announcements.enabled %}
       <section class="home-section">
         <div class="section-head">
-          <h2>news</h2>
+          <h2>News</h2>
           {% assign news_count = site.news | size %}
           {% if page.announcements.limit and news_count > page.announcements.limit %}
             <a class="section-more" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">&rarr;</span></a>
@@ -53,10 +53,10 @@ layout: default
       </section>
     {% endif %}
 
-    {% if page.selected_papers %}
+    {% if page.Selected_Papers %}
       <section class="home-section">
         <div class="section-head">
-          <h2>selected publications</h2>
+          <h2>Selected Publications</h2>
           {% capture all_papers %}{% bibliography_count %}{% endcapture %}
           {% capture selected_papers %}{% bibliography_count --query @*[selected=true]* %}{% endcapture %}
           {% assign all_papers = all_papers | strip | plus: 0 %}
