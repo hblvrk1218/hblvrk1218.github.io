@@ -2,7 +2,7 @@
 layout: page
 title: AI-Assisted Driver Monitoring and Braking Evaluation
 description: Vision-based driver monitoring and braking timing evaluation using MiDaS depth estimation
-date: 2026-06-01
+date: 2025-06-01
 category: selected
 chip: Graduation Capstone · 2025
 tech: [python, computer-vision, midas, driver-monitoring]
