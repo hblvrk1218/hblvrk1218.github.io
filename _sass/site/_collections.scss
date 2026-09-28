@@ -91,6 +91,13 @@
 // First row sits as close to the page header as the first blog card does.
 .post > article > .publications ol.bibliography > li:first-child, .post > article > .projects > .project-item:first-child { padding-top: var(--sp-1) !important; }
 .project-card-link { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: var(--sp-5); align-items: start; color: inherit; }
+.project-item--no-thumb .project-card-link {
+  grid-template-columns: 1fr;
+}
+
+.project-item--no-thumb .project-code-link {
+  margin-left: 0;
+}
 .project-card-link:hover { color: inherit; text-decoration: none; }
 .project-thumb, .project-thumb figure { margin: 0; line-height: 0; }
 .project-thumb { position: relative; overflow: hidden; border: 1px solid var(--global-divider-color); border-radius: var(--radius-sm); background: #000; }
