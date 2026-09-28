@@ -3,8 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Senior Undergraduate, Computer Science and Engineering, <a href="https://www.skku.edu">Sungkyunkwan University</a>
-status: Seeking graduate research positions for Fall 2027
+ CCS Graduate School of Mobility, KAIST
+status: Researching optimum design and multidisciplinary engineering optimization
 
 profile:
   align: right
@@ -25,13 +25,16 @@ latest_posts:
   limit: 5
 ---
 
-I am a senior undergraduate at [Sungkyunkwan University](https://www.skku.edu) (Computer Science and Engineering, expected Aug. 2027). I have research experience at [Pixel Lab](https://sites.google.com/view/pixel-lab-ai/home) (Korea University), [AIoT Lab](https://aiot.snu.ac.kr/home) (Seoul National University), and [V-Lab](https://v-laboratory.github.io/#/) (Sungkyunkwan University).
+I am a master's student at the [CCS Graduate School of Mobility, KAIST](https://mo.kaist.ac.kr/en/). I am conducting research in [Prof. Jang's research group](https://idlab.kaist.ac.kr/home), focusing on engineering optimization and computational design.
+
 
 ## research interests
 
-My research is driven by a fundamental concern: as AI systems grow increasingly powerful, the risks of concentrated control and deliberate misuse demand proactive, principled countermeasures. I focus on two interrelated challenges:
+My research focuses on developing optimization methodologies for complex engineering systems, with particular interests in:
 
-- **Preventing AI monopolization** by individuals or corporations
-- **Preemptive defense** against the malicious exploitation of AI
+- **Optimal Design** — developing computational methodologies to improve engineering performance under multiple objectives and constraints
+- **Layout Optimization** — optimizing the spatial arrangement and configuration of components under geometric and physical constraints
+- **Multiphysics Optimization** — optimizing engineering systems by considering interactions among multiple physical phenomena
 
-Ultimately, my goal is to establish robust frameworks that anticipate and mitigate the latent dangers of advanced AI before they materialize, ensuring that transformative AI technologies serve the broad public good rather than becoming instruments of harm.
+
+Ultimately, I aim to develop practical and efficient optimization frameworks that integrate physical modeling, numerical analysis, and computational design for multidisciplinary engineering problems.
