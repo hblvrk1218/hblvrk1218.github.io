@@ -1,13 +1,10 @@
-# Yohan Lee · academic website
+# Hanbeen Lee · academic website
 
-Personal research website built with [Jekyll](https://jekyllrb.com/) on top of [al-folio](https://github.com/alshedivat/al-folio).
-Blog posts use the [Distill](https://distill.pub/) article format; every other page shares one quiet, typographic design.
+Personal academic website of Hanbeen Lee, an M.S. student at the Cho Chun Shik Graduate School of Mobility, KAIST.
 
-**Live site:** <https://yh-lee01.github.io> · [한국어 README](README.ko.md)
+Research interests include optimal design, layout optimization, and multiphysics optimization.
 
-| Home (light) | Distill post (dark) |
-| --- | --- |
-| ![Home page](docs/images/home.png) | ![Blog post with sticky contents](docs/images/post.png) |
+**Live site:** <https://hblvrk1218.github.io> · [한국어 README](README.ko.md)
 
 ## Features
 
