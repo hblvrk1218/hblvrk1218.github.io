@@ -2,10 +2,6 @@
 
 **Live site:** <https://hblvrk1218.github.io> · [English README](README.md)
 
-| 홈 (라이트) | Distill 글 (다크) |
-| --- | --- |
-| ![홈](docs/images/home.png) | ![스크롤을 따라오는 목차가 있는 글](docs/images/post.png) |
-
 ## 기능
 
 - 모든 페이지가 **720px 한 열**을 쓰고, 메뉴와 푸터도 이 열에 맞춥니다.
