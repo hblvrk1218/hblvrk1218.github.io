@@ -3,7 +3,12 @@
   matching the publication rows. Video projects (`youtube:` in front matter) use the
   YouTube thumbnail with a "Video" badge; others use `img`.
 {% endcomment %}
-<article class="project-item">
+{% assign has_thumbnail = false %}
+{% if project.youtube or project.img %}
+  {% assign has_thumbnail = true %}
+{% endif %}
+
+<article class="project-item{% unless has_thumbnail %} project-item--no-thumb{% endunless %}">
   <a class="project-card-link" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     {% if project.youtube %}
       <figure class="project-thumb card-video">
