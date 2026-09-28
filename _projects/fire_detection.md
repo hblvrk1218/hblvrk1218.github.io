@@ -5,10 +5,10 @@ description: Two-stage vision-based fire detection using EfficientNet-B0 and YOL
 date: 2024-07-01
 category: selected
 chip: Smart Factory · 2024
-tech: [python, efficientnet, yolov8, csharp]
+tech: [python, efficientnet, yolov8]
 ---
 
-<p class="project-meta">2024 · Python · EfficientNet-B0 · YOLOv8 · C#</p>
+<p class="project-meta">2024 · Python · EfficientNet-B0 · YOLOv8</p>
 
 Developed a vision-based fire detection system combining **EfficientNet-B0 classification** and **YOLOv8 object detection** to reduce false alarms and improve fire and smoke detection from image and CCTV data.
 
