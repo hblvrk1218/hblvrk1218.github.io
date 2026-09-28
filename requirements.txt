@@ -1,0 +1,2 @@
+# Needed by the jekyll-jupyter-notebook plugin to render .ipynb files in posts.
+nbconvert

@@ -1,0 +1,23 @@
+_site
+.bundle
+Gemfile.lock
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+.claude/
+assets/libs/
+assets/rendercv/rendercv_output/*.typ
+al-folio-upgrade-report.md
+node_modules/
+output/playwright/
+test-results/
+vendor
+
+# Local reference copy of ICLR Blogposts 2026 source (do not commit / publish)
+2026-main.zip
+2026-main/

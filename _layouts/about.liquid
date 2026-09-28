@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<div class="post about">
+  <header class="post-header about-header">
+    <div class="about-identity">
+      <h1 class="post-title">{% if site.title == 'blank' %}{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}{% else %}{{ site.title }}{% endif %}</h1>
+      <p class="about-affiliation">{{ page.subtitle }}</p>
+      {% if page.status %}<p class="about-status">{{ page.status }}</p>{% endif %}
+      {% if page.social %}
+        {% assign socials = site.data.socials %}
+        <p class="about-links">
+          {% if socials.email %}<a href="mailto:{{ socials.email | encode_email }}">{{ socials.email }}</a>{% endif %}
+          {% if socials.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ socials.scholar_userid }}">Scholar</a>{% endif %}
+          {% if socials.github_username %}<a href="https://github.com/{{ socials.github_username }}">GitHub</a>{% endif %}
+          {% if socials.linkedin_username %}<a href="https://www.linkedin.com/in/{{ socials.linkedin_username }}">LinkedIn</a>{% endif %}
+          <a href="{{ '/cv/' | relative_url }}">CV</a>
+        </p>
+      {% endif %}
+    </div>
+    {% if page.profile.image %}
+      <div class="about-photo">
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {% assign profile_alt = site.first_name | append: ' ' | append: site.last_name %}
+        {% include figure.liquid loading="eager" path=profile_image_path sizes="144px" alt=profile_alt cache_bust=true %}
+      </div>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="about-intro">{{ content }}</div>
+
+    {% if page.announcements and page.announcements.enabled %}
+      <section class="home-section">
+        <div class="section-head">
+          <h2>news</h2>
+          {% assign news_count = site.news | size %}
+          {% if page.announcements.limit and news_count > page.announcements.limit %}
+            <a class="section-more" href="{{ '/news/' | relative_url }}">All news <span aria-hidden="true">&rarr;</span></a>
+          {% endif %}
+        </div>
+        {% include news.liquid limit=true %}
+      </section>
+    {% endif %}
+
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      <section class="home-section">
+        <div class="section-head">
+          <h2>latest posts</h2>
+          <a class="section-more" href="{{ '/blog/' | relative_url }}">All posts <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        {% include latest_posts.liquid %}
+      </section>
+    {% endif %}
+
+    {% if page.selected_papers %}
+      <section class="home-section">
+        <div class="section-head">
+          <h2>selected publications</h2>
+          {% capture all_papers %}{% bibliography_count %}{% endcapture %}
+          {% capture selected_papers %}{% bibliography_count --query @*[selected=true]* %}{% endcapture %}
+          {% assign all_papers = all_papers | strip | plus: 0 %}
+          {% assign selected_papers = selected_papers | strip | plus: 0 %}
+          {% if all_papers > selected_papers %}
+            <a class="section-more" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">&rarr;</span></a>
+          {% endif %}
+        </div>
+        {% include selected_papers.liquid %}
+      </section>
+    {% endif %}
+
+    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% include newsletter.liquid center=true %}
+    {% endif %}
+  </article>
+</div>

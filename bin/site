@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+# Jekyll reads sources as UTF-8; a POSIX/C locale fails with "invalid byte sequence".
+case "${LC_ALL:-${LANG:-}}" in
+  *UTF-8*|*utf8*) ;;
+  *) export LC_ALL=C.UTF-8 LANG=C.UTF-8 ;;
+esac
+
+# Optional, ignored machine-local toolchain configuration.
+if [[ -f .bundle/local-env.sh ]]; then
+  source .bundle/local-env.sh
+fi
+
+# Same check as the deploy workflow: a CSS minifier once turned calc(var(--x) ...) into
+# "var( -  - x)", which browsers silently drop.
+check_css() {
+  if grep -q 'var( -' _site/assets/css/main.css; then
+    echo "Broken custom property in _site/assets/css/main.css:" >&2
+    grep -o '[a-z-]*:[^;{}]*var( [^;}]*' _site/assets/css/main.css | head >&2
+    return 1
+  fi
+  echo "CSS check passed."
+}
+
+case "${1:-serve}" in
+  build) JEKYLL_ENV=production bundle exec jekyll build ;;
+  check) JEKYLL_ENV=production bundle exec jekyll build && check_css ;;
+  serve) bundle exec jekyll serve --host 127.0.0.1 --port "${PORT:-4000}" --livereload ;;
+  *) echo "Usage: bin/site [serve|build|check]" >&2; exit 2 ;;
+esac

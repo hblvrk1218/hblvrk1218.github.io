@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% if page.cv_pdf contains '://' %}
+  {% assign cv_url = page.cv_pdf %}
+{% else %}
+  {% assign cv_url = page.cv_pdf | relative_url %}
+{% endif %}
+
+<div class="post">
+  {% include page_header.liquid title=page.title description=page.description action_url=cv_url action_text="Download PDF" %}
+
+  <article>
+    {% if page.cv_pdf %}
+      <div class="cv-pdf-embed">
+        <iframe src="{{ cv_url }}" title="Curriculum vitae (PDF)" loading="lazy"></iframe>
+      </div>
+      <p class="cv-pdf-fallback">
+        PDF not showing? <a href="{{ cv_url }}" target="_blank" rel="noopener noreferrer">Open the CV in a new tab</a>.
+      </p>
+      {% comment %} Phones often cannot show PDFs inline, so they get a clear open button instead of the frame. {% endcomment %}
+      <a class="cv-open" href="{{ cv_url }}" target="_blank" rel="noopener noreferrer">
+        <i class="fa-regular fa-file-pdf" aria-hidden="true"></i>
+        <span><strong>Open CV (PDF)</strong><small>Opens in your browser's PDF viewer</small></span>
+      </a>
+    {% endif %}
+  </article>
+</div>

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post{% if page.collection == 'projects' %} reading-page{% endif %}">
+  {% if page.title and page.no_title != true %}
+    {% include page_header.liquid title=page.title description=page.description count=page.count %}
+  {% endif %}
+  <article>
+    {{ content }}
+  </article>
+  {% if page.collection == 'projects' %}
+    <p class="back-link"><a href="{{ '/projects/' | relative_url }}">&larr; All projects</a></p>
+  {% endif %}
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>

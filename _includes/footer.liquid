@@ -1,0 +1,11 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="site-footer-inner">
+      <span>&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
+      <span>
+        {%- if site.last_updated %}Site updated {{ site.time | date: '%b %-d, %Y' }}{% endif -%}
+        {%- if site.data.socials.rss_icon %} &middot; <a href="{{ '/feed.xml' | relative_url }}">RSS</a>{% endif -%}
+      </span>
+    </div>
+  </div>
+</footer>
