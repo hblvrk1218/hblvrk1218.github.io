@@ -1,9 +1,5 @@
 # Hanbeen Lee · academic website
 
-Personal academic website of Hanbeen Lee, an M.S. student at the Cho Chun Shik Graduate School of Mobility, KAIST.
-
-Research interests include optimal design, layout optimization, and multiphysics optimization.
-
 **Live site:** <https://hblvrk1218.github.io> · [한국어 README](README.ko.md)
 
 ## Features
