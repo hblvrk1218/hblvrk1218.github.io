@@ -77,7 +77,7 @@ bing_site_verification:
 # -----------------------------------------------------------------------------
 
 blog_name: blog
-blog_description: The more AI advances, the more we must read, think, and build intuition.
+blog_description: Research notes, engineering ideas, and things I learn along the way.
 permalink: /blog/:year/:title/
 lsi: false
 
