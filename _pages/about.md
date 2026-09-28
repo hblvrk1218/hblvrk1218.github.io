@@ -3,8 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: >
- CCS Graduate School of Mobility, KAIST
-status: Researching optimum design and multidisciplinary engineering optimization
+ M.S. Students, CCS Graduate School of Mobility, KAIST
+status: Researching optimal design, layout optimization, and multiphysics optimization 
 
 profile:
   align: right
