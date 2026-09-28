@@ -25,7 +25,7 @@ latest_posts:
   limit: 5
 ---
 
-I am a master's student at the [CCS Graduate School of Mobility, KAIST](https://mo.kaist.ac.kr/en/). I am conducting research in [Prof. Jang's research group](https://idlab.kaist.ac.kr/home), focusing on engineering optimization and computational design.
+I am a master student at the [CCS Graduate School of Mobility, KAIST](https://mo.kaist.ac.kr/en/). I am conducting research in [Prof. Jang's research group](https://idlab.kaist.ac.kr/home), focusing on engineering optimization and computational design.
 
 
 ## research interests
