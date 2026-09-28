@@ -11,7 +11,7 @@ profile:
   image: profile_pic.jpg
   image_circular: true
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:
