@@ -9,7 +9,7 @@ nav_order: 3
 ---
 
 {% comment %} Projects are ordered by the `importance` field in each file under _projects/. {% endcomment %}
-{% assign sorted_projects = site.projects | sort: "date" %}
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
 
 <div class="projects">
   {% for project in sorted_projects %}
