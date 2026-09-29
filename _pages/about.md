@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
- M.S. Student, CCS Graduate School of Mobility, KAIST
+ M.S. Student,Graduate School of Mobility, KAIST
 status: Researching optimal design, layout optimization, and multiphysics optimization 
 
 profile:
@@ -25,7 +25,7 @@ latest_posts:
   limit: 5
 ---
 
-I am a M.S. Student at the [CCS Graduate School of Mobility, KAIST](https://mo.kaist.ac.kr/en/). I am conducting research in [Prof. Jang's research group](https://idlab.kaist.ac.kr/home), focusing on engineering optimization and computational design.
+I am a M.S. Student at the [Graduate School of Mobility, KAIST](https://mo.kaist.ac.kr/en/). I am conducting research in [Prof. Jang's research group](https://idlab.kaist.ac.kr/home), focusing on engineering optimization and computational design.
 
 
 ## Research Interests
